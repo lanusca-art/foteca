@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+body {
+  background-color: #333333;
+  font-family: "Varela Round", serif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 450px;
+  height: 900px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+a { /* Remove a estilização dos links*/
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto do elemento pai */
+    font-size: inherit; /* Mantém o tamanho da fonte do elemento pai */
+    font-weight: inherit; /* Mantém o peso da fonte */
+    background: none; /* Remove qualquer fundo padrão */
+    border: none; /* Remove qualquer borda */
+    padding: 0; /* Remove espaçamentos internos */
+    margin: 0; /* Remove espaçamentos externos */
+    display: inline-block; /* Permite que o link se comporte como um botão */
+}
+
+img { /* impedir de baixar a imagem */
+  pointer-events: none;
+}
+
+
+.page {
+    background: #FFFBEF; 
+    border-radius: 20px;
+    padding: 30px 10px;
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 450px;
+    height: 900px;
+    position: relative;
+}
+
+.topo {
+   background: none;
+   color: #FFFBEF;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+
+   padding: 30px 30px;
+
+   display: flex;
+   justify-content: space-between; /* Coloca um elemento em cada extremidade */
+   align-items: center;
+}
+
+.topo img {
+  max-height: 40px; /* Ajuste o tamanho das imagens conforme necessário */
+  max-width: auto;
+}
+
+/* home page */
+  .plus-container {
+    margin-top: 260px;
+
+  }
+
+  .plus-button {
+    width: 300px;
+    height: auto;
+  }
+
+  .plus {
+    color: #FFFBEF;
+    background-color: #EE931E;
+    
+    font-family: "Varela Round", serif;
+    font-size: 300px;
+
+    border-radius: 50%;
+    border: none;
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botao1 {
+    border: none;
+    background: #ADEC53;
+    border-radius: 100px;
+    width: 400px;
+    height: 80px;
+    color: #000000;
+
+    font-family: "Outfit", serif;
+    font-weight: 700;
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* camera page */
+  .image-container img{
+    margin-top: 200px;
+    border: #000000;
+    border-radius: 20px;
+
+    width: 350px;
+    height: auto;
+  }
+
+  .button-bar {
+    width: 390px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-bar img {
+    width: 75px;
+    height: auto;
+  }
+
+/* cadastro */
+  .text-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+
+  }
+
+  .text-input > input{
+    border: 2px solid #EE931E;
+    background-color: #FFFBEF;
+    border-radius: 100px;
+    width: 400px;
+    height: 50px;
+    color: #000;
+
+    font-family: "Outfit", serif;
+    font-weight: 700;
+    font-size: 32px;
+
+    text-align: center;
+  }
+
+  .text-input input::placeholder {
+    text-align: center;
+    color: #EE931E; /* Cor do placeholder */
+  }
+  .text-input input:focus {
+    outline: none;
+  }
+
+
+/* confirmação */
+  .confirm {
+    background-color: #30C9CC;
+  }
+
+  .text-confirm {
+    margin-top: 300px;
+
+    color: #FFFBEF;
+    font-family: "Varela Round", serif;
+    font-size: 70px;
+
+    text-align: center;
+    line-height: 80px;
+  }
+
+  .button-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
